@@ -1,0 +1,53 @@
+<div class="flex justify-evenly items-start">
+
+<form class="flex flex-col justify-center items-center w-[600px] pb-[65px] space-y-5 ml-8 border">
+    <h1 class="text-center text-3xl font-bold my-6">Agregar un prodcuto</h1>
+    <div class="flex flex-col w-64">
+        <label for="referenceNumber">Número de Referencia:</label>
+        <input type="text" id="referenceNumber" name="referenceNumber" class="border-gray-500 p-1 border-2 rounded-sm" required>
+    </div>
+
+    <div class="flex flex-col w-64">
+        <label for="productName">Nombre del Producto:</label>
+        <input type="text" id="productName" name="productName" class="border-gray-500 p-1 border-2 w-full rounded-sm" required>
+    </div>
+
+    <div class="flex flex-col w-64">
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price" class="border-gray-500 border-2 p-1 rounded-sm" required>
+    </div>
+
+    <div class="flex flex-col w-64">
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description" class="border-gray-500 border-2 p-1 rounded-sm" required></textarea>
+    </div>
+
+    <div class="flex items-center space-x-10">
+        <div class="space-x-2">
+            <label for="productType">Tipo de Producto:</label>
+            <select id="productType" name="productType" class="border-gray-500 border-2 p-1 rounded-sm" required>
+                <option value="Electrónica">Electrónica</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Alimentos">Alimentos</option>
+                <!-- Agrega más opciones según tus necesidades -->
+            </select>
+        </div>
+        <div class="flex space-x-2">
+            <label for="isOnSale">Producto en Oferta</label>
+            <input type="checkbox" id="isOnSale" name="isOnSale">
+        </div>
+    </div>
+
+
+
+    <div class="space-x-2 py-4">
+        <label for="productImage">Imagen del Producto:</label>
+        <input type="file" id="productImage" name="productImage" class="cursor-pointer">
+    </div>
+
+    <button class="bg-black text-white rounded-sm px-6 py-1 hover:bg-slate-900 transition-all duration-200" type="submit">Guardar</button>
+</form>
+
+<img src="../../../assets/imagen1.jpg" alt="imagen" class="w-96">
+
+</div>
