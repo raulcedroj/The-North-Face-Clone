@@ -1,36 +1,35 @@
 <div class="flex justify-evenly flex-wrap mt-10">
+    @for(product of products; track product){
+        <div class="flex flex-col justify-center items-center max-w-80 px-1 mb-16 space-y-3 text-wrap">
+            <img class="w-80 h-80" src="{{product.productImage}}" alt="Producto">
+            <h1 class="text-2xl text-center">{{product.productName}}</h1>
+            <p class="text-center text-gray-700">{{product.description}}</p>
+            <p class="text-xl">{{product.price}} &euro;</p>
+            @if(product.isOnSale){
+                <p class="text-green-600">¡Producto en Oferta!</p>
+            }
+        </div>
+    }
     <div class="flex flex-col justify-center items-center w-80 px-1 mb-16 space-y-3">
-        <img class="w-80 h-auto" src="../../../assets/products/producto1.webp" alt="Producto1">
-        <h1 class="text-2xl">Producto 1</h1>
-        <p class="text-center text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p class="text-xl">100 &euro;</p>
+        <img class="w-80 h-80" src="https://images.thenorthface.com/is/image/TheNorthFaceEU/83N1_ROU_hero?$262x306$" alt="Producto1">
+        <h1 class="text-2xl text-center">ZAPATILLAS DE TRAIL RUNNING SUMMIT VECTIV™ PRO II PARA HOMBRE</h1>
+        <p class="text-center text-gray-700">Zapatillas de trail running con suela SURFACE CTRL™ y tecnología de espuma de gran rebote</p>
+        <p class="text-xl">250 &euro;</p>
     </div>
 
     <div class="flex flex-col justify-center items-center w-80 px-1 mb-16 space-y-3">
-        <img class="w-80 h-auto" src="../../../assets/products/producto1.webp" alt="Producto1">
-        <h1 class="text-2xl">Producto 1</h1>
-        <p class="text-center text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p class="text-xl">Precio</p>
+        <img class="w-80 h-80" src="https://images.thenorthface.com/is/image/TheNorthFaceEU/87UF_R0U_hero?$262x306$" alt="Producto1">
+        <h1 class="text-2xl text-center">ZAPATILLAS DE TRAIL RUNNING SUMMIT VECTIV™ PRO II PARA HOMBRE</h1>
+        <p class="text-center text-gray-700">Pantalón shell plegable DryVent™ de senderismo con cinturón integrado</p>
+        <p class="text-xl">360 &euro;</p>
     </div>
 
     <div class="flex flex-col justify-center items-center w-80 px-1 mb-16 space-y-3">
-        <img class="w-80 h-auto" src="../../../assets/products/producto1.webp" alt="Producto1">
-        <h1 class="text-2xl">Producto 1</h1>
-        <p class="text-center text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p class="text-xl">Precio</p>
+        <img class="w-80 h-80" src="https://images.thenorthface.com/is/image/TheNorthFaceEU/4M9J_RMI_hero?$262x306$" alt="Producto1">
+        <h1 class="text-2xl text-center">PLUMÍFERO DIABLO PARA HOMBRE</h1>
+        <p class="text-center text-gray-700">Chaqueta de plumón de 700 cuins ultracálida para hacer senderismo en días fríos</p>
+        <p class="text-xl">330 &euro;</p>
     </div>
 
-    <div class="flex flex-col justify-center items-center w-80 px-1 mb-16 space-y-3">
-        <img class="w-80 h-auto" src="../../../assets/products/producto1.webp" alt="Producto1">
-        <h1 class="text-2xl">Producto 1</h1>
-        <p class="text-center text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p class="text-xl">Precio</p>
-    </div>
-
-    <div class="flex flex-col justify-center items-center w-80 px-1 mb-16 space-y-3">
-        <img class="w-80 h-auto" src="../../../assets/products/producto1.webp" alt="Producto1">
-        <h1 class="text-2xl">Producto 1</h1>
-        <p class="text-center text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p class="text-xl">Precio</p>
-    </div>
+    
 </div>
