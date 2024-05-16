@@ -1,10 +1,10 @@
 export interface Product {
-    referenceNumber: number,
-    productName: string,
-    price: number,
-    description: string,
-    productType: string,
-    isOnSale: boolean,
-    productImage: string
+    referencia: number,
+    nombre: string,
+    precio: number,
+    descripcion: string,
+    categoria: string,
+    oferta: boolean,
+    imagen: string
 
 }

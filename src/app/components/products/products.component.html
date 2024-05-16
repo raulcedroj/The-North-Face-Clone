@@ -1,11 +1,11 @@
 <div class="flex justify-evenly flex-wrap mt-10">
-    @for(product of products; track product){
+    @for(product of productList; track product){
         <div class="flex flex-col justify-center items-center max-w-80 px-1 mb-16 space-y-3 text-wrap">
-            <img class="w-80 h-80" src="{{product.productImage}}" alt="Producto">
-            <h1 class="text-2xl text-center">{{product.productName}}</h1>
-            <p class="text-center text-gray-700">{{product.description}}</p>
-            <p class="text-xl">{{product.price}} &euro;</p>
-            @if(product.isOnSale){
+            <img class="w-80 h-80" src="{{product.imagen}}" alt="Producto">
+            <h1 class="text-2xl text-center">{{product.nombre}}</h1>
+            <p class="text-center text-gray-700">{{product.descripcion}}</p>
+            <p class="text-xl">{{product.precio}} &euro;</p>
+            @if(product.oferta){
                 <p class="text-green-600">¡Producto en Oferta!</p>
             }
         </div>

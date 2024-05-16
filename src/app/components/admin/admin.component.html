@@ -4,58 +4,58 @@
         class="flex flex-col justify-center items-center w-[600px] pb-[65px] space-y-5 ml-8 border">
         <h1 class="text-center text-3xl font-bold my-6">Agregar un prodcuto</h1>
         <div class="flex flex-col w-64">
-            <label for="referenceNumber">Número de Referencia:</label>
+            <label for="referencia">Número de Referencia:</label>
 
-            @if(productForm.get('referenceNumber')?.touched && productForm.get('referenceNumber')?.value === ''){
+            @if(productForm.get('referencia')?.touched && productForm.get('referencia')?.value === ''){
             <p class="text-red-500">El número de referencia es obligatorio</p>
             }
 
-            <input type="text" formControlName="referenceNumber" id="referenceNumber" name="referenceNumber"
+            <input type="text" formControlName="referencia" id="referencia" name="referencia"
                 class="border-gray-500 p-1 border-2 rounded-sm" required>
 
 
         </div>
 
         <div class="flex flex-col w-64">
-            <label for="productName">Nombre del Producto:</label>
+            <label for="nombre">Nombre del Producto:</label>
 
-            @if(productForm.get('productName')?.touched && productForm.get('productName')?.value === ''){
+            @if(productForm.get('nombre')?.touched && productForm.get('nombre')?.value === ''){
             <p class="text-red-500">El nombre del producto es obligatorio</p>
             }
 
-            <input type="text" formControlName="productName" id="productName" name="productName"
+            <input type="text" formControlName="nombre" id="nombre" name="nombre"
                 class="border-gray-500 p-1 border-2 w-full rounded-sm" required>
         </div>
 
         <div class="flex flex-col w-64">
-            <label for="price">Precio:</label>
+            <label for="precio">Precio:</label>
 
-            @if(productForm.get('price')?.touched && productForm.get('price')?.value === ''){
+            @if(productForm.get('precio')?.touched && productForm.get('precio')?.value === ''){
                 <p class="text-red-500">El precio del producto es obligatorio</p>
-            }@else if (productForm.get('price')?.touched && productForm.get('price')?.value < 1){
+            }@else if (productForm.get('precio')?.touched && productForm.get('precio')?.value < 1){
                 <p class="text-red-500">El precio del producto no puede ser negativo</p>
             }
 
-            <input type="number" id="price" formControlName="price" name="price"
+            <input type="number" id="precio" formControlName="precio" name="precio"
                 class="border-gray-500 border-2 p-1 rounded-sm" required>
         </div>
 
         <div class="flex flex-col w-64">
-            <label for="description">Descripción:</label>
-            @if(productForm.get('description')?.touched && productForm.get('description')?.value === ''){
+            <label for="descripcion">Descripción:</label>
+            @if(productForm.get('descripcion')?.touched && productForm.get('descripcion')?.value === ''){
                 <p class="text-red-500">La descripcion del producto es obligatoria</p>
             }
-            <textarea id="description" name="description" formControlName="description"
+            <textarea id="descripcion" name="descripcion" formControlName="descripcion"
                 class="border-gray-500 border-2 p-1 rounded-sm resize-none" required></textarea>
         </div>
 
         <div class="flex items-center space-x-10">
             <div class="space-x-2 flex flex-col">
-                <label for="productType" class="ml-2">Tipo de Producto:</label>
-                @if(productForm.get('productType')?.touched && productForm.get('productType')?.value === ''){
+                <label for="categoria" class="ml-2">Tipo de Producto:</label>
+                @if(productForm.get('categoria')?.touched && productForm.get('categoria')?.value === ''){
                     <p class="text-red-500">El tipo de producto es obligatorio</p>
                 }
-                <select id="productType" name="productType" formControlName="productType"
+                <select id="categoria" name="categoria" formControlName="categoria"
                     class="border-gray-500 border-2 p-1 rounded-sm w-40" required>
                     <option value="Zapatillas">Zapatillas</option>
                     <option value="Chaqueta">Chaqueta</option>
@@ -67,19 +67,19 @@
                 </select>
             </div>
             <div class="flex space-x-2 mt-6">
-                <label for="isOnSale">Producto en Oferta</label>
-                <input type="checkbox" id="isOnSale" formControlName="isOnSale" name="isOnSale">
+                <label for="oferta">Producto en Oferta</label>
+                <input type="checkbox" id="oferta" formControlName="oferta" name="oferta">
             </div>
         </div>
 
 
 
         <div class="space-x-2 py-4 flex flex-col">
-            <label for="productImage" class="ml-2">Imagen del Producto:</label>
-            @if(productForm.get('productImage')?.touched && productForm.get('productImage')?.value === ''){
+            <label for="imagen" class="ml-2">Imagen del Producto:</label>
+            @if(productForm.get('imagen')?.touched && productForm.get('imagen')?.value === ''){
                 <p class="text-red-500">La imagen del producto es obligatoria</p>
             }
-            <input type="text" formControlName="productImage" id="productImage" name="productImage"
+            <input type="text" formControlName="imagen" id="imagen" name="imagen"
                 class="border-gray-500 p-1 border-2 rounded-sm w-96" placeholder="Link" required>
         </div>
 
